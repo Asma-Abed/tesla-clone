@@ -9,6 +9,7 @@
 :root {
   --black-color: #171a20;
   --gray-color: #393c41;
+  --gray-color-light: #5c5e62;
   --white-color: #fff;
   --white-color-2: #f4f4f4;
 }
@@ -99,6 +100,10 @@ body {
   margin-bottom: 0.9rem;
 }
 
+.hero__heading-secondary {
+  font-size: 3.4rem;
+}
+
 .hero__subtitle {
   font-size: 1.4rem;
   color: var(--gray-color);
@@ -129,16 +134,45 @@ body {
   text-decoration: none;
   font-size: 1.4rem;
   border-radius: 4px;
+  width: 26rem;
+  text-align: center;
+  padding: 1.1rem 2.4rem;
+  backdrop-filter: blur(0.8rem);
 }
 
 .hero__btn-black {
-  padding: 1.1rem 8.1rem;
   color: var(--white-color);
   background-color: rgba(23, 26, 32, 0.8);
 }
 
 .hero__btn-white {
-  padding: 1.1rem 6.1rem;
   color: var(--gray-color);
   background-color: rgba(244, 244, 244, 0.65);
+}
+
+.hero__btn-shop {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.footer {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--gray-color-light);
+  font-size: 1.2rem;
 }
