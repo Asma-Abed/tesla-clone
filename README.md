@@ -1,6 +1,6 @@
 Tesla clone.
 
-Tesla Website clone using HTML and CSS.
+Tesla Website clone using HTML, CSS, and Javascript.
 
 Fully responsive.
 
