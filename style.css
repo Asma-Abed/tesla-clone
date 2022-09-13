@@ -82,6 +82,7 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  object-position: center;
   z-index: -1;
 }
 
@@ -100,6 +101,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+.hero__title-transform {
+  left: 25%;
+  transform: translateX(0);
+}
 
 .hero__heading {
   font-size: 4rem;
@@ -110,13 +115,15 @@ body {
 }
 
 .hero__heading-secondary {
-  font-size: 3.4rem;
+  font-size: 3.6rem;
 }
 
 .hero__subtitle {
   font-size: 1.4rem;
   color: var(--gray-color);
   font-weight: 500;
+  width: max-content;
+  text-align: center;
 }
 
 .hero__link:link,
