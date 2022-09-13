@@ -74,6 +74,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero__background-img {
@@ -86,15 +87,18 @@ body {
 
 .hero__content {
   /* width: 100%; */
-  height: inherit;
+  /* height: inherit; */
   display: flex;
   flex-direction: column;
-  /* gap: 40vh; */
   justify-content: space-between;
   align-items: center;
 }
 
 .hero__title {
+  position: absolute;
+  top: -84vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero__heading {
