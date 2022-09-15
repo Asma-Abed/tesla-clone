@@ -15,6 +15,12 @@ const house2Content = document.querySelector('.house-2-content');
 const connectorContent = document.querySelector('.connector-content');
 const footer = document.querySelector('.footer');
 
+const menuBtn = document.querySelector('.menu-btn');
+const menuClose = document.querySelector('.menu__icon-close-box');
+
+const menu = document.querySelector('.menu');
+const overlay = document.querySelector('.overlay');
+
 const showfirstModel = (entries) => {
   const [entry] = entries;
   console.log(entry);
@@ -135,3 +141,15 @@ const lastSectionObserver = new IntersectionObserver(showFooter, {
 });
 
 lastSectionObserver.observe(lastSection);
+
+// Show side menu
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.add('show');
+  overlay.classList.add('show');
+});
+
+menuClose.addEventListener('click', () => {
+  menu.classList.remove('show');
+  overlay.classList.remove('show');
+});
