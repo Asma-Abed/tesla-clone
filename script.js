@@ -126,6 +126,7 @@ secHouseObserver.observe(house2Section);
 const showFooter = (entries) => {
   const [entry] = entries;
   console.log(entry);
+
   if (entry.isIntersecting) {
     footer.classList.add('show');
     connectorContent.classList.add('show');
@@ -137,10 +138,32 @@ const showFooter = (entries) => {
 
 const lastSectionObserver = new IntersectionObserver(showFooter, {
   root: null,
-  threshold: 0.6,
+  threshold: [0.6],
 });
 
 lastSectionObserver.observe(lastSection);
+
+// const heroTitle = document.querySelector('.hero__title-fixed');
+// const fixedFooter = (entries) => {
+//   const [entry] = entries;
+//   console.log(entry);
+//   if (entry.isIntersecting) {
+//     connectorContent.classList.remove('connector-content');
+//     connectorContent.classList.add('hero__content-fixed');
+//     heroTitle.classList.remove('hero__title');
+//   } else {
+//     connectorContent.classList.add('connector-content');
+//     connectorContent.classList.remove('hero__content-fixed');
+//     heroTitle.classList.add('hero__title');
+//   }
+// };
+
+// const finalSectionObserver = new IntersectionObserver(fixedFooter, {
+//   root: null,
+//   threshold: 1,
+// });
+
+// finalSectionObserver.observe(footer);
 
 // Show side menu
 

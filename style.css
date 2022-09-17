@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-  /* overflow-y: hidden;  */
+  /* overflow-y: scroll; */
   font-weight: 600;
   position: relative;
   z-index: 0;
@@ -42,8 +42,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 5rem;
-  top: 2.4rem;
+  top: 1.4rem;
   left: 0;
 }
 
@@ -52,18 +53,143 @@ body {
   height: auto;
 }
 
+.header__nav {
+  /* width: 62vw; */
+}
+
+.header__nav-link-margin {
+  /* margin-left: auto; */
+  padding-right: 45rem;
+  padding-left: 1rem;
+}
+
 .header__nav-list {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  /* gap: 1rem; */
+  justify-content: flex-end;
+  position: relative;
+  height: 3rem;
+  font-size: 0;
 }
 
-.header__nav-link {
+.header__nav-list li {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 3rem;
+  position: relative;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
   display: inline-block;
   text-decoration: none;
   color: var(--black-color);
   width: max-content;
   font-size: 1.4rem;
+}
+
+.sliding-animation {
+  position: absolute;
+  height: 100%;
+  /* width: 8.4rem; */
+  /* top: 0;
+  left: 0; */
+  border-radius: 4px;
+
+  z-index: 0;
+  transition: all 0.6s ease;
+}
+
+.item-1-hover {
+  width: 8.4rem;
+}
+
+.item-1-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 8.4rem;
+  left: 0;
+}
+
+.item-2-hover {
+  width: 8.4rem;
+}
+
+.item-2-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 8.4rem;
+  left: 8.4rem;
+}
+
+.item-3-hover {
+  width: 8.4rem;
+}
+
+.item-3-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 8.4rem;
+  left: 16.8rem;
+}
+
+.item-4-hover {
+  width: 8.4rem;
+}
+
+.item-4-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 8.4rem;
+  left: 25.2rem;
+}
+
+.item-5-hover {
+  width: 9.8rem;
+}
+
+.item-5-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 9.8rem;
+  left: 33.6rem;
+}
+
+.item-6-hover {
+  width: 15rem;
+}
+
+.item-6-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 11rem;
+  left: 43.4rem;
+}
+
+.item-7-hover {
+  width: 7rem;
+}
+
+.item-7-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 6rem;
+  left: 89.9rem;
+}
+
+.item-8-hover {
+  width: 8.4rem;
+}
+
+.item-8-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 8rem;
+  left: 96.6rem;
+}
+
+.item-9-hover {
+  width: 8.4rem;
+}
+
+.item-9-hover:hover ~ .sliding-animation {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 8.4rem;
+  left: 16.8rem;
 }
 
 .menu {
@@ -292,6 +418,15 @@ body {
   transition: all 0.1s;
 }
 
+/* .hero__content-fixed {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+} */
+
 .show.model-1-content {
   opacity: 1;
   visibility: visible;
@@ -331,6 +466,7 @@ body {
   opacity: 0;
   visibility: hidden;
   position: fixed;
+  width: 90vw;
   bottom: 3vh;
   left: 50%;
   transform: translateX(-50%);
@@ -345,6 +481,8 @@ body {
 .footer__list {
   list-style: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.8rem;
 }
 
@@ -357,7 +495,42 @@ body {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 100em) {
+  .header__nav-link-margin {
+    padding-right: 38rem;
+  }
+}
+@media only screen and (max-width: 93.75em) {
+  .header__nav-link-margin {
+    padding-right: 32rem;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .header__nav-link-margin {
+    padding-right: 25rem;
+  }
+}
+@media only screen and (max-width: 81.25em) {
+  .header__nav-link-margin {
+    padding-right: 20rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .header__nav-1 {
+    display: none;
+  }
+
+  .header__nav-link-hide {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
+  .header {
+    padding: 0 2.5rem;
+  }
+
   .hero__btns {
     flex-direction: column;
     gap: 1.5rem;
@@ -389,8 +562,7 @@ body {
 
   .footer__list {
     margin: 1rem 0;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.9rem;
   }
 
   .footer__item-hide {
