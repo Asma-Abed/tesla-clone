@@ -4,4 +4,4 @@ Tesla Website clone using HTML, CSS, and Javascript.
 
 Fully responsive.
 
-In progress...
+Snap scrolling effect implemented like the original.
