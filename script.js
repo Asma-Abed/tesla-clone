@@ -21,6 +21,8 @@ const menuClose = document.querySelector('.menu__icon-close-box');
 const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
 
+// Snap scrolling effect
+
 const showfirstModel = (entries) => {
   const [entry] = entries;
   console.log(entry);
@@ -143,27 +145,7 @@ const lastSectionObserver = new IntersectionObserver(showFooter, {
 
 lastSectionObserver.observe(lastSection);
 
-// const heroTitle = document.querySelector('.hero__title-fixed');
-// const fixedFooter = (entries) => {
-//   const [entry] = entries;
-//   console.log(entry);
-//   if (entry.isIntersecting) {
-//     connectorContent.classList.remove('connector-content');
-//     connectorContent.classList.add('hero__content-fixed');
-//     heroTitle.classList.remove('hero__title');
-//   } else {
-//     connectorContent.classList.add('connector-content');
-//     connectorContent.classList.remove('hero__content-fixed');
-//     heroTitle.classList.add('hero__title');
-//   }
-// };
-
-// const finalSectionObserver = new IntersectionObserver(fixedFooter, {
-//   root: null,
-//   threshold: 1,
-// });
-
-// finalSectionObserver.observe(footer);
+//
 
 // Show side menu
 
@@ -175,4 +157,147 @@ menuBtn.addEventListener('click', () => {
 menuClose.addEventListener('click', () => {
   menu.classList.remove('show');
   overlay.classList.remove('show');
+});
+
+// Sliding effect on navigation bar
+
+const slideAnimation = document.querySelector('.sliding-animation');
+const itemAnimation = document.querySelector('.item-animation ');
+const padding = document.querySelector('.header__nav-link-margin');
+const paddingRight = window
+  .getComputedStyle(padding)
+  .getPropertyValue('padding-right');
+console.log(paddingRight);
+
+document.querySelector('.link-1').addEventListener('mouseover', (e) => {
+  console.log(e.movementX, e.movementY);
+  slideAnimation.style.width = '8.4rem';
+  slideAnimation.style.left = '0';
+  slideAnimation.style.opacity = '1';
+});
+
+document.querySelector('.link-1').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-2').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '8.4rem';
+  slideAnimation.style.left = '8.4rem';
+  slideAnimation.style.opacity = '1';
+});
+
+document.querySelector('.link-2').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-3').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '8.4rem';
+  slideAnimation.style.left = '16.8rem';
+  slideAnimation.style.opacity = '1';
+});
+
+document.querySelector('.link-3').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-4').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '8.4rem';
+  slideAnimation.style.left = '25.2rem';
+  slideAnimation.style.opacity = '1';
+});
+
+document.querySelector('.link-4').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-5').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '9.8rem';
+  slideAnimation.style.left = '33.6rem';
+  slideAnimation.style.opacity = '1';
+});
+
+document.querySelector('.link-5').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-6').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '11rem';
+  slideAnimation.style.left = '43.4rem';
+  slideAnimation.style.opacity = '1';
+});
+
+document.querySelector('.link-6').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-7').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '6rem';
+  slideAnimation.style.opacity = '1';
+  if (paddingRight === '450px') {
+    slideAnimation.style.left = '89.9rem';
+  }
+  if (paddingRight === '380px') {
+    slideAnimation.style.left = '82.9rem';
+  }
+  if (paddingRight === '320px') {
+    slideAnimation.style.left = '76.9rem';
+  }
+  if (paddingRight === '250px') {
+    slideAnimation.style.left = '69.9rem';
+  }
+  if (paddingRight === '200px') {
+    slideAnimation.style.left = '64.9rem';
+  }
+});
+
+document.querySelector('.link-7').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-8').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '8.3rem';
+  slideAnimation.style.opacity = '1';
+  if (paddingRight === '450px') {
+    slideAnimation.style.left = '96.5rem';
+  }
+  if (paddingRight === '380px') {
+    slideAnimation.style.left = '89.5rem';
+  }
+  if (paddingRight === '320px') {
+    slideAnimation.style.left = '83.5rem';
+  }
+  if (paddingRight === '250px') {
+    slideAnimation.style.left = '76.5rem';
+  }
+  if (paddingRight === '200px') {
+    slideAnimation.style.left = '71.5rem';
+  }
+});
+
+document.querySelector('.link-8').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.link-9').addEventListener('mouseover', () => {
+  slideAnimation.style.width = '6.2rem';
+  slideAnimation.style.opacity = '1';
+  if (paddingRight === '450px') {
+    slideAnimation.style.left = '105.9rem';
+  }
+  if (paddingRight === '380px') {
+    slideAnimation.style.left = '98.9rem';
+  }
+  if (paddingRight === '320px') {
+    slideAnimation.style.left = '92.9rem';
+  }
+  if (paddingRight === '250px') {
+    slideAnimation.style.left = '85.9rem';
+  }
+  if (paddingRight === '200px') {
+    slideAnimation.style.left = '80.9rem';
+  }
+});
+
+document.querySelector('.link-9').addEventListener('mouseout', () => {
+  slideAnimation.style.opacity = '0';
 });
