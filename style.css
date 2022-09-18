@@ -54,10 +54,6 @@ body {
   height: auto;
 }
 
-.header__nav {
-  /* width: 62vw; */
-}
-
 .header__nav-link-margin {
   /* margin-left: auto; */
   padding-right: 45rem;

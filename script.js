@@ -169,15 +169,35 @@ const paddingRight = window
   .getPropertyValue('padding-right');
 console.log(paddingRight);
 
+document.querySelector('.item-1-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
+});
 document.querySelector('.link-1').addEventListener('mouseover', (e) => {
-  console.log(e.movementX, e.movementY);
   slideAnimation.style.width = '8.4rem';
   slideAnimation.style.left = '0';
   slideAnimation.style.opacity = '1';
 });
 
-document.querySelector('.link-1').addEventListener('mouseout', () => {
+document.querySelector('.link-1').addEventListener('mouseout', (e) => {
   slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.item-2-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
 });
 
 document.querySelector('.link-2').addEventListener('mouseover', () => {
@@ -190,6 +210,17 @@ document.querySelector('.link-2').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
 });
 
+document.querySelector('.item-3-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
+});
+
 document.querySelector('.link-3').addEventListener('mouseover', () => {
   slideAnimation.style.width = '8.4rem';
   slideAnimation.style.left = '16.8rem';
@@ -198,6 +229,17 @@ document.querySelector('.link-3').addEventListener('mouseover', () => {
 
 document.querySelector('.link-3').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.item-4-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
 });
 
 document.querySelector('.link-4').addEventListener('mouseover', () => {
@@ -210,6 +252,17 @@ document.querySelector('.link-4').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
 });
 
+document.querySelector('.item-5-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
+});
+
 document.querySelector('.link-5').addEventListener('mouseover', () => {
   slideAnimation.style.width = '9.8rem';
   slideAnimation.style.left = '33.6rem';
@@ -220,6 +273,17 @@ document.querySelector('.link-5').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
 });
 
+document.querySelector('.item-6-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
+});
+
 document.querySelector('.link-6').addEventListener('mouseover', () => {
   slideAnimation.style.width = '11rem';
   slideAnimation.style.left = '43.4rem';
@@ -228,6 +292,17 @@ document.querySelector('.link-6').addEventListener('mouseover', () => {
 
 document.querySelector('.link-6').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.item-7-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
 });
 
 document.querySelector('.link-7').addEventListener('mouseover', () => {
@@ -254,6 +329,17 @@ document.querySelector('.link-7').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
 });
 
+document.querySelector('.item-8-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
+});
+
 document.querySelector('.link-8').addEventListener('mouseover', () => {
   slideAnimation.style.width = '8.3rem';
   slideAnimation.style.opacity = '1';
@@ -276,6 +362,17 @@ document.querySelector('.link-8').addEventListener('mouseover', () => {
 
 document.querySelector('.link-8').addEventListener('mouseout', () => {
   slideAnimation.style.opacity = '0';
+});
+
+document.querySelector('.item-9-hover').addEventListener('mouseout', (e) => {
+  if (
+    e.relatedTarget.classList.contains('model-1-section') ||
+    e.relatedTarget.classList.contains('hero__title') ||
+    e.relatedTarget.classList.contains('header')
+  ) {
+    slideAnimation.style.removeProperty('left');
+    slideAnimation.style.removeProperty('width');
+  }
 });
 
 document.querySelector('.link-9').addEventListener('mouseover', () => {
