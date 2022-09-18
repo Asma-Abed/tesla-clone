@@ -234,19 +234,19 @@ document.querySelector('.link-7').addEventListener('mouseover', () => {
   slideAnimation.style.width = '6rem';
   slideAnimation.style.opacity = '1';
   if (paddingRight === '450px') {
-    slideAnimation.style.left = '89.9rem';
+    slideAnimation.style.left = '89.4rem';
   }
   if (paddingRight === '380px') {
-    slideAnimation.style.left = '82.9rem';
+    slideAnimation.style.left = '82.4rem';
   }
   if (paddingRight === '320px') {
-    slideAnimation.style.left = '76.9rem';
+    slideAnimation.style.left = '76.4rem';
   }
   if (paddingRight === '250px') {
-    slideAnimation.style.left = '69.9rem';
+    slideAnimation.style.left = '69.4rem';
   }
   if (paddingRight === '200px') {
-    slideAnimation.style.left = '64.9rem';
+    slideAnimation.style.left = '64.4rem';
   }
 });
 
@@ -258,19 +258,19 @@ document.querySelector('.link-8').addEventListener('mouseover', () => {
   slideAnimation.style.width = '8.3rem';
   slideAnimation.style.opacity = '1';
   if (paddingRight === '450px') {
-    slideAnimation.style.left = '96.5rem';
+    slideAnimation.style.left = '95.4rem';
   }
   if (paddingRight === '380px') {
-    slideAnimation.style.left = '89.5rem';
+    slideAnimation.style.left = '88.4rem';
   }
   if (paddingRight === '320px') {
-    slideAnimation.style.left = '83.5rem';
+    slideAnimation.style.left = '82.4rem';
   }
   if (paddingRight === '250px') {
-    slideAnimation.style.left = '76.5rem';
+    slideAnimation.style.left = '75.4rem';
   }
   if (paddingRight === '200px') {
-    slideAnimation.style.left = '71.5rem';
+    slideAnimation.style.left = '70.4rem';
   }
 });
 
@@ -282,19 +282,19 @@ document.querySelector('.link-9').addEventListener('mouseover', () => {
   slideAnimation.style.width = '6.2rem';
   slideAnimation.style.opacity = '1';
   if (paddingRight === '450px') {
-    slideAnimation.style.left = '105.9rem';
+    slideAnimation.style.left = '103.7rem';
   }
   if (paddingRight === '380px') {
-    slideAnimation.style.left = '98.9rem';
+    slideAnimation.style.left = '96.7rem';
   }
   if (paddingRight === '320px') {
-    slideAnimation.style.left = '92.9rem';
+    slideAnimation.style.left = '90.7rem';
   }
   if (paddingRight === '250px') {
-    slideAnimation.style.left = '85.9rem';
+    slideAnimation.style.left = '83.7rem';
   }
   if (paddingRight === '200px') {
-    slideAnimation.style.left = '80.9rem';
+    slideAnimation.style.left = '78.7rem';
   }
 });
 

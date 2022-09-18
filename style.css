@@ -127,19 +127,19 @@ body {
 }
 
 .item-6-hover {
-  width: 15rem;
+  width: 11rem;
 }
 
 .item-7-hover {
-  width: 7rem;
+  width: 6rem;
 }
 
 .item-8-hover {
-  width: 8.4rem;
+  width: 8.3rem;
 }
 
 .item-9-hover {
-  width: 8.4rem;
+  width: 6.2rem;
 }
 
 .menu {
@@ -466,7 +466,6 @@ body {
   }
   .item-9-hover {
     background-color: rgba(0, 0, 0, 0.05);
-    width: 6.2rem;
     border-radius: 4px;
     transition: all 0.3s;
   }
