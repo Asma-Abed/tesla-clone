@@ -159,6 +159,11 @@ menuClose.addEventListener('click', () => {
   overlay.classList.remove('show');
 });
 
+overlay.addEventListener('click', () => {
+  menu.classList.remove('show');
+  overlay.classList.remove('show');
+});
+
 // Sliding effect on navigation bar
 
 const slideAnimation = document.querySelector('.sliding-animation');
